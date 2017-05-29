@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="emoRate">
+    <attr name="smileWidth" format="dimension"/>
+    <attr name="smileHeight" format="dimension"/>
+    <attr name="horizontalSpace" format="dimension"/>
+    <attr name="enabled" format="boolean"/>
+    <attr name="rating" format="integer"/>
+    <attr name="Default1" format="reference"/>
+    <attr name="Default2" format="reference"/>
+    <attr name="Default3" format="reference"/>
+    <attr name="Default4" format="reference"/>
+    <attr name="Default5" format="reference"/>
+    <attr name="Rate1" format="reference"/>
+    <attr name="Rate2" format="reference"/>
+    <attr name="Rate3" format="reference"/>
+    <attr name="Rate4" format="reference"/>
+    <attr name="Rate5" format="reference"/>
+    </declare-styleable>
+</resources>
