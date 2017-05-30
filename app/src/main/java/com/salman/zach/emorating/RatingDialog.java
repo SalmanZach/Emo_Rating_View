@@ -60,10 +60,10 @@ public class RatingDialog extends AlertDialog {
                 status.setText("Sceptic !");
                 break;
             case 3:
-                status.setText("Happy !");
+                status.setText("Smiling !");
                 break;
             case 4:
-                status.setText("Smiling !");
+                status.setText("Happy !");
                 break;
             case 5:
                 status.setText("Loved !");
