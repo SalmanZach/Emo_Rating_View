@@ -8,24 +8,53 @@ an implementation for custom rating view with multiple expressions to express yo
 ## Example.
 ![emo](https://cloud.githubusercontent.com/assets/11782272/26559532/14a0eeec-4465-11e7-8da6-ef120b6341ea.gif)
 
-how to use.
+set Default1,Default2 as Unselected Views and set Rate1,Rate2 as Selected Views 
 
            <com.salman.zach.emorater.EmoRatingView
             android:id="@+id/rateBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
+            app:horizontalSpace="12dp"
             android:layout_margin="20dp"
             android:layout_marginBottom="40dp"
+            app:Default1="@drawable/default_rate1"
+            app:Default2="@drawable/default_rate2"
+            app:Default3="@drawable/default_rate3"
+            app:Default4="@drawable/default_rate4"
+            app:Default5="@drawable/default_rate5"
             app:Rate1="@drawable/rate1"
             app:Rate2="@drawable/rate2"
             app:Rate3="@drawable/rate3"
             app:Rate4="@drawable/rate4"
             app:Rate5="@drawable/rate5"
-            app:horizontalSpace="12dp"
-            app:rating="0" />
+            app:rating="3" />           
 
+           
+set Selection at compile time as well as run time
 
+        app:rating="3"
+        emoRatingView.setRating(5);
+        
+        
+### Add Listner
+
+    emoRatingView.setOnRatingSliderChangeListener(new IEmoRatingListener() {
+            @Override
+            public void onRatingFinal(int rating) {
+              emoRatingView.getRating()
+            }
+
+            @Override
+            public void onRatingCancel() {
+
+            }
+
+            @Override
+            public void onRatingPending(int rating) {
+
+            }
+        });
 
 License
 -------
